@@ -1,0 +1,28 @@
+    1  cd /d/GIT\ repository\ copy/
+    2  git config --global user.name "Tetiana Malovanna"
+    3  git config --global user.email tiana.malivon@gmail.com
+    4  git config --get user.name
+    5  git config --get user.email
+    6  git clone https://github.com/tianamal/HW_10.git
+    7  git clone https://github.com/tianamal/HW_10.git
+    8  cd HW_10/
+    9  touch text_ignore.txt
+   10  vim .gitignore
+   11  git status
+   12  git add .gitignore
+   13  git commit -m "file text_ignore is ignored"
+   14  touch main_text.txt
+   15  git add main_text.txt
+   16  git commit -m "main_test file was created"
+   17  git checkout -b develop
+   18  touch develop_test.txt
+   19  git add develop_test.txt
+   20  git commit -m "develop_test file was created"
+   21  vim develop_test.txt
+   22  git status
+   23  git add develop_test.txt
+   24  git commit -m "develop_test file was modified"
+   25  git checkout main
+   26  git merge develop
+   27  git log
+   28  history > command_list.csv
